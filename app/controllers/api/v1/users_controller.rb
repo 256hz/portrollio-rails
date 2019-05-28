@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  skip_before_action :authorized, only: [:create]
+  # skip_before_action :authorized, only: [:create]
   before_action :find_user, only: [:destroy, :update]
 
   def index
@@ -18,7 +18,6 @@ class Api::V1::UsersController < ApplicationController
       render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
     else
       render json: { error: 'failed to create user' }, status: :not_acceptable
-    end
     end
   end
 
