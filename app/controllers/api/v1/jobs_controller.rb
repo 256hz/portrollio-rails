@@ -28,7 +28,11 @@ class Api::V1::JobsController < ApplicationController
     end
   end
 
+<<<<<<< HEAD
   def destroy
+=======
+  def destory
+>>>>>>> master
     @job.destroy()
     render json: @job
   end

@@ -1,5 +1,5 @@
 class Api::V1::GithubsController < ApplicationController
-  before_action :find_skill, only: [:destroy, :update]
+  before_action :find_github, only: [:destroy, :update]
 
   def index
     @githubs = Github.all
@@ -20,7 +20,7 @@ class Api::V1::GithubsController < ApplicationController
   end
 
   def update
-    @github.update(skill_params)
+    @github.update(job_params)
     if @github.save
       render json: @github, status: :accepted
     else
@@ -36,10 +36,10 @@ class Api::V1::GithubsController < ApplicationController
   private
 
   def github_params
-    params.permit(:name)
+    params.permit(:first_name, :last_name, :email, :phone, :img_url)
   end
 
-  def find_skill
-    @github = Skill.find(params[:id])
+  def find_github
+    @github = Github.find(params[:id])
   end
 end

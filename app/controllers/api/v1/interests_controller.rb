@@ -28,7 +28,11 @@ class Api::V1::InterestsController < ApplicationController
     end
   end
 
+<<<<<<< HEAD
   def destroy
+=======
+  def destory
+>>>>>>> master
     @interest.destroy()
     render json: @interest
   end

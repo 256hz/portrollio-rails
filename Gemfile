@@ -64,3 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rack-cors'
 
 gem 'active_model_serializers'
+
+gem "jwt", "~> 2.2"
+
+gem "faker", "~> 1.9"
