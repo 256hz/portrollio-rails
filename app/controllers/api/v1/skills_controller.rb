@@ -28,8 +28,8 @@ class Api::V1::SkillsController < ApplicationController
     end
   end
 
-  def destory
-    @skill.destory()
+  def destroy
+    @skill.destroy()
     render json: @skill
   end
 

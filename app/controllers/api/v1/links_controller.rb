@@ -28,8 +28,8 @@ class Api::V1::LinksController < ApplicationController
     end
   end
 
-  def destory
-    @link.destory()
+  def destroy
+    @link.destroy()
     render json: @link
   end
 

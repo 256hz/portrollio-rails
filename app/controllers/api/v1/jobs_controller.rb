@@ -28,8 +28,8 @@ class Api::V1::JobsController < ApplicationController
     end
   end
 
-  def destory
-    @job.destory()
+  def destroy
+    @job.destroy()
     render json: @job
   end
 

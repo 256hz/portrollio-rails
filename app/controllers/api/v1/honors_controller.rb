@@ -28,8 +28,8 @@ class Api::V1::HonorsController < ApplicationController
     end
   end
 
-  def destory
-    @honor.destory()
+  def destroy
+    @honor.destroy()
     render json: @honor
   end
 
