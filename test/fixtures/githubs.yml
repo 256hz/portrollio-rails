@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  repo_owner: MyString
+  repo_name: MyString
+  img_url: MyString
+  summary: MyString
+  user_id: 1
+
+two:
+  repo_owner: MyString
+  repo_name: MyString
+  img_url: MyString
+  summary: MyString
+  user_id: 1
